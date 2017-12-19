@@ -1,5 +1,4 @@
-# Fn
-https://github.com/fnproject
+# [Fn](https://github.com/fnproject)
 
 - a lightweight Docker-based serverless functions platform you can run on your laptop, server, or cloud
 
