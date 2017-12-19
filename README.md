@@ -1,7 +1,8 @@
 # [Fn ; http://fnproject.io/](https://github.com/fnproject)
+- 2017.12.19
+- @jupil.hwang
 
 - a lightweight Docker-based serverless functions platform you can run on your laptop, server, or cloud
-
 
 fnproject tutorials
 https://github.com/fnproject/tutorials/tree/master/Introduction
