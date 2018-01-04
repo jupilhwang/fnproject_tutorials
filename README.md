@@ -1,11 +1,36 @@
-# [Fn ; http://fnproject.io/](https://github.com/fnproject)
+# [Fn - http://fnproject.io/](https://github.com/fnproject)
 - 2017.12.19
 - @jupil.hwang
 
+## Fn Project
 - a lightweight Docker-based serverless functions platform you can run on your laptop, server, or cloud
 
 fnproject tutorials
 https://github.com/fnproject/tutorials/tree/master/Introduction
+
+# Fn cli
+## Install
+- homebrew : macOS
+  ```bash
+  brew install fn
+  ```
+- shell script (linux or others)
+  ```bash
+  curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+  ```
+- Download the bin
+  binary download [relaese](https://github.com/fnproject/cli/releases) and Download it
+
+## Start
+fn을 시작하기 위해서 fnproject/functions 와 fnproject/ui의 Docker Image를 시작한다
+  ```bash
+  # Fn server
+  fn start
+
+  # Fn-UI server
+  docker run --rm -it --link functions:api -p 4000:4000 -e "API_URL=http://api:8080" --name fn-ui fnproject/ui
+  ```
+  --> Local Docker Server에서 Container가 기동한다.
 
 
 # Fn Go
